@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="description" content="Visualziacion Exbecarios Fulbright en la Costa Caribe, Eje Cafetero y Sur-Occidente de Colombia, entre 2005 - 2015">
+  <meta name="author" content="Camilo Mera">
+  <title>Visual Analytics - Homework </title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="deck/core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="deck/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="deck/extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="deck/themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="deck/themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="deck/core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="deck/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h2>¿Que tan apaticos somos a estudiar Ciencias Exactas?</h2>
+      <p>
+        David Camilo Mera D<br/>
+        Visual Analytics<br/>
+        Universidad de los Andes<br/>
+        2017<br/>
+      </p>
+      <footer><p><small>Utilice las teclas de navegacion para interactuar</small> </p></footer>
+    </section>
+
+    <section class="slide">
+      <h2>Exbecarios Fulbright 2005-2015 (Caribe, Eje Cafetero, Sur-Occidente)</h2>
+      <iframe src="viz/region_area.html" width="1400" height="600" frameborder="0"></iframe>
+    </section>
+    
+    <section class="slide">
+      <h2>Conclusiones</h2>
+      <ol>
+          <li><p>Independientemente de la region el area de estudios que mayor interes genera en los estudiantes es el de Ingenieria y Ciencias Aplicadas; sin embargo, para las regiones Caribe y Eje Cafetero la cantidad de exbecarios de esta area es menor de lo esperado (promedio)</p></li>
+          <li><p>Independientemente de la region el area de estudios que menor interes genera es Ciencias Fisicas y Matematicas</p></li>
+          <li><p>En la region Caribe, para la area de estudios de Humanidades y Ciencias Sociales es altamente problable que la cantidad de exbecarios al año sea superior o igual a 1</p></li>
+          <li><p>En el Sur-Occidente colombiano el area de estudios Educacion causa el mismo interes que las Ingenierias y Ciencias Aplicadas</p></li>
+          <li><p>En el Eje Cafetero el area de estudio Artes y Arquitectura, junto con Educacion tienen un comportamiento similar, es decir, a lo mucho tendran un exbecario cada año</p></li>
+          <li><p>Los colombianos de estas regiones no estan interesandos en las Ciencias Puras, pero si en las Ciencias Aplicadas</p></li>
+        </ol>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="deck/jquery.min.js"></script>
+<script src="deck/core/deck.core.js"></script>
+
+<!-- Extensiodeck/n JS files. Add or remove as needed. -->
+<script src="deck/extensions/menu/deck.menu.js"></script>
+<script src="deck/extensions/goto/deck.goto.js"></script>
+<script src="deck/extensions/status/deck.status.js"></script>
+<script src="deck/extensions/navigation/deck.navigation.js"></script>
+<script src="deck/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
